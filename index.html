@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>EduTrack - Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">E</div>
+            <div>
+                <h2>EduTrack</h2>
+                <p>Student Portal</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#students">Students</a>
+            <a href="#addstudent">Add Student</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="profile">
+            <div class="profile-img">A</div>
+            <div><b>Admin</b><small>Administrator</small></div>
+        </div>
+    </aside>
+
+    <main>
+
+        <section id="dashboard">
+            <div class="top">
+                <div>
+                    <small>WELCOME BACK</small>
+                    <h1>Student Dashboard</h1>
+                    <p>Manage and monitor your student community.</p>
+                </div>
+                <a class="add-button" href="#addstudent">+ Add Student</a>
+            </div>
+
+            <div class="hero">
+                <div class="hero-text">
+                    <small>ACADEMIC MANAGEMENT</small>
+                    <h2>Manage students<br><span>smarter & better.</span></h2>
+                    <p>A simple and modern student management dashboard designed for colleges.</p>
+                    <a class="hero-button" href="#students">View Students →</a>
+                </div>
+
+                <div class="hero-art">
+                    <div class="big-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="person">
+                        <div class="hair"></div>
+                        <div class="face"></div>
+                        <div class="shirt"></div>
+                    </div>
+                    <div class="floating-card first"><b>540+</b><span>Students</span></div>
+                    <div class="floating-card second"><b>4</b><span>Departments</span></div>
+                </div>
+            </div>
+
+            <div class="statistics">
+                <div class="stat-card purple">
+                    <div class="stat-icon">👩🏻‍🎓</div>
+                    <div>
+                        <p>Total Students</p>
+                        <h2>540</h2><span>+12 this month</span>
+                    </div>
+                </div>
+                <div class="stat-card blue">
+                    <div class="stat-icon">💻</div>
+                    <div>
+                        <p>IT Students</p>
+                        <h2>40</h2><span>33% of total</span>
+                    </div>
+                </div>
+                <div class="stat-card pink">
+                    <div class="stat-icon">💡</div>
+                    <div>
+                        <p>ECE Students</p>
+                        <h2>25</h2><span>21% of total</span>
+                    </div>
+                </div>
+                <div class="stat-card orange">
+                    <div class="stat-icon">👩🏻‍💻</div>
+                    <div>
+                        <p>CSE Students</p>
+                        <h2>35</h2><span>29% of total</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graph-section">
+                <div class="box">
+                    <h2>Department Distribution</h2>
+                    <p>Student count by department</p>
+
+                    <div class="bar-item"><span>IT <b>40</b></span>
+                        <div class="bar-bg"><i class="purple-bar"></i></div>
+                    </div>
+                    <div class="bar-item"><span>CSE <b>35</b></span>
+                        <div class="bar-bg"><i class="blue-bar"></i></div>
+                    </div>
+                    <div class="bar-item"><span>ECE <b>25</b></span>
+                        <div class="bar-bg"><i class="orange-bar"></i></div>
+                    </div>
+                    <div class="bar-item"><span>MECH <b>20</b></span>
+                        <div class="bar-bg"><i class="pink-bar"></i></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h2>Year Overview</h2>
+                    <p>Academic year summary</p>
+
+                    <div class="year-grid">
+                        <div><b>28</b><span>I Year</span></div>
+                        <div><b>32</b><span>II Year</span></div>
+                        <div><b>34</b><span>III Year</span></div>
+                        <div><b>26</b><span>IV Year</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="students">
+            <div class="top">
+                <div>
+                    <small>STUDENT DIRECTORY</small>
+                    <h1>Student Records</h1>
+                    <p>View all registered students.</p>
+                </div>
+                <a class="add-button" href="#addstudent">+ Add Student</a>
+            </div>
+
+            <div class="filters">
+                <input placeholder="⌕  Search student...">
+                <select>
+                    <option>All Departments</option>
+                    <option>IT</option>
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>MECH</option>
+                </select>
+                <select>
+                    <option>All Years</option>
+                    <option>I Year</option>
+                    <option>II Year</option>
+                    <option>III Year</option>
+                    <option>IV Year</option>
+                </select>
+            </div>
+
+            <div class="table-box">
+                <table>
+                    <tr>
+                        <th>STUDENT</th>
+                        <th>REGISTER NO.</th>
+                        <th>DEPARTMENT</th>
+                        <th>YEAR</th>
+                        <th>SEMESTER</th>
+                        <th>EMAIL</th>
+                        <th>PHONE</th>
+                        <th>ACTION</th>
+                    </tr>
+
+                    <tr>
+                        <td><b>🟣 Arun Kumar</b></td>
+                        <td>23IT001</td>
+                        <td><label class="tag purple-tag">IT</label></td>
+                        <td>III Year</td>
+                        <td>V</td>
+                        <td>arun@example.com</td>
+                        <td>9876543210</td>
+                        <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><b>🔵 Priya Sharma</b></td>
+                        <td>23CSE002</td>
+                        <td><label class="tag blue-tag">CSE</label></td>
+                        <td>III Year</td>
+                        <td>V</td>
+                        <td>priya@example.com</td>
+                        <td>9876543211</td>
+                        <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><b>🟠 Rahul Kumar</b></td>
+                        <td>24ECE003</td>
+                        <td><label class="tag orange-tag">ECE</label></td>
+                        <td>II Year</td>
+                        <td>III</td>
+                        <td>rahul@example.com</td>
+                        <td>9876543212</td>
+                        <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><b>🔴Divya Raj</b></td>
+                        <td>22MECH004</td>
+                        <td><label class="tag pink-tag">MECH</label></td>
+                        <td>IV Year</td>
+                        <td>VII</td>
+                        <td>divya@example.com</td>
+                        <td>9876543213</td>
+                        <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+
+        <section id="addstudent">
+            <div class="top">
+                <div>
+                    <small>STUDENT MANAGEMENT</small>
+                    <h1>Add New Student</h1>
+                    <p>Enter student academic information.</p>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <div class="form-side">
+                    <div class="form-icon">👩🏻‍🎓</div>
+                    <h2>Student Profile</h2>
+                    <p>Create a new student record by entering the required details.</p>
+                    <hr>
+                    <b>Tip</b>
+                    <p>Make sure the register number, email and phone number are correct.</p>
+                </div>
+
+                <div class="form-content">
+                    <form>
+                        <div class="row">
+                            <div><label>Register Number</label><input placeholder="23IT001"></div>
+                            <div><label>Student Name</label><input placeholder="Enter full name"></div>
+                        </div>
+
+                        <div class="row">
+                            <div><label>Email Address</label><input type="email" placeholder="student@example.com">
+                            </div>
+                            <div><label>Phone Number</label><input type="tel" placeholder="9876543210"></div>
+                        </div>
+
+                        <div class="row">
+                            <div>
+                                <label>Department</label>
+                                <select>
+                                    <option>Select Department</option>
+                                    <option>IT</option>
+                                    <option>CSE</option>
+                                    <option>ECE</option>
+                                    <option>MECH</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label>Year</label>
+                                <select>
+                                    <option>Select Year</option>
+                                    <option>I Year</option>
+                                    <option>II Year</option>
+                                    <option>III Year</option>
+                                    <option>IV Year</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div>
+                                <label>Semester</label>
+                                <select>
+                                    <option>Select Semester</option>
+                                    <option>I</option>
+                                    <option>II</option>
+                                    <option>III</option>
+                                    <option>IV</option>
+                                    <option>V</option>
+                                    <option>VI</option>
+                                    <option>VII</option>
+                                    <option>VIII</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label>Student Status</label>
+                                <select>
+                                    <option>Active</option>
+                                    <option>Inactive</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button class="save">Save Student</button>
+                        <button class="clear" type="reset">Clear</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about">
+            <div class="about-card">
+                <div class="about-icon">E</div>
+                <h1>About EduTrack</h1>
+                <p>EduTrack is a modern Student Management System designed to organize student information in a simple
+                    and visually appealing interface.</p>
+
+                <div class="about-features">
+                    <div><b>540+</b><span>Students</span></div>
+                    <div><b>4</b><span>Departments</span></div>
+                    <div><b>8</b><span>Semesters</span></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
